@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h1>Register User</h1>
+    <div class="form-container">
+      <form name="registerForm" id="registration-form">
+        <label for="firstName">First Name *</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          placeholder="John"
+          required
+        />
+        <p class="error-message"></p>
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" placeholder="Doe" required />
+        <p class="error-message"></p>
+        <label for="e-mail">E-mail address *</label>
+        <input
+          type="email"
+          id="e-mail"
+          placeholder="example@example.com"
+          required
+        />
+        <p class="error-message"></p>
+        <label for="date-of-birth">Date of Birth *</label>
+        <input type="date" id="date-of-birth" required />
+        <p class="error-message"></p>
+        <label for="password">Password *</label>
+        <input
+          type="password"
+          id="password"
+          pattern=".{8,}"
+          required
+          title="8 characters minimum"
+        />
+        <p class="error-message"></p>
+        <p class="password-rules">
+          Your password should contain at least 8 characters and 1 number.
+        </p>
+        <label for="confirm-password">Confirm Password *</label>
+        <input
+          type="password"
+          id="confirm-password"
+          pattern=".{8,}"
+          required
+          title="8 characters minimum"
+        />
+        <p class="error-message"></p>
+        <p class="password-rules">Your passwords should match</p>
+
+        <input class="button" type="submit" value="submit" name="submit" />
+      </form>
+    </div>
+  </body>
+</html>
